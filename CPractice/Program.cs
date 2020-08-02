@@ -5,10 +5,6 @@ namespace CSharpPractice
     class Program
     {
 
-        string firstName;
-        string lastName;
-        int age;
-
         static void Main(string[] args)
         {
             // data types
@@ -23,48 +19,64 @@ namespace CSharpPractice
             //bool conditional = true;
             //bool coditional2 = false;
 
-            Program newProgram = new Program("Valeria", "Meza", 24);
-            Console.WriteLine(newProgram.GetFirstName());
-            Console.WriteLine(newProgram.GetLastName());
+            //int min = int.MinValue;
+            //int max = int.MaxValue;
+
+            //Console.WriteLine($"The range of the integers are {min} to {max}");
+
+            //double min = double.MinValue;
+            //double max = double.MaxValue;
+
+            //Console.WriteLine($"The range of the doubles are {min} to {max}");
+
+            //double third = 1.0 / 3.0;
+            //Console.WriteLine(third);
+
+            //decimal min = decimal.MinValue;
+            //decimal max = decimal.MaxValue;
+
+            //Console.WriteLine($"The range of the decimals are {min} to {max}");
+
+            //double a = 1.0;
+            //double b = 3.0;
+            //Console.WriteLine(a / b);
+
+            //decimal c = 1.0M;
+            //decimal d = 3.0M;
+            //Console.WriteLine(c / d);
+
+            //double radius = 2.50;
+            //double area = Math.PI * radius * radius;
+            //Console.WriteLine(area);
+
+            //Console.Write("Enter your name: ");
+            //string userResponse = Console.ReadLine();
+
+            //Console.WriteLine($"Hello {userResponse}");
+
+
+            //Console.WriteLine("Enter a number: ");
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter another number: ");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(num1 + num2);
+
+            string color, pluralNoun, celebrity;
+
+            Console.Write("Enter a color: ");
+            color = Console.ReadLine();
+
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine();
+
+            Console.Write("Enter a celebrity name: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine($"Roses are {color}");
+            Console.WriteLine($"{pluralNoun} are blue");
+            Console.WriteLine($"I love {celebrity}");
 
             Console.ReadLine();
-        }
-
-        public Program(string firstName, string lastName, int age)
-        {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-        }
-
-        public string GetFirstName()
-        {
-            return this.firstName;
-        }
-
-        public void SetFirstName(string firstName)
-        {
-            this.firstName = firstName;
-        }
-
-        public string GetLastName()
-        {
-            return this.lastName;
-        }
-
-        public void SetLastName(string lastName)
-        {
-            this.lastName = lastName;
-        }
-
-        public int GetAge()
-        {
-            return this.age;
-        }
-
-        public void SetAge(int age)
-        {
-            this.age = age;
         }
     }
 }
